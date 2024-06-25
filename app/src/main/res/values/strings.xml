@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Autodidatta</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="user">usuario</string>
+    <string-array name="Tpos_materias">
+        <item>Fisica</item>
+        <item>Logica</item>
+        <item>Matematicas</item>
+        <item>Espanol</item>
+        <item>Ciencias</item>
+        <item>Historia</item>
+        <item>Artes</item>
+    </string-array>
+    <string name="contacto">contacto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

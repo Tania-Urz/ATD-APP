@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user"
+    android:background="@color/dark"
+    >
+    <include
+    android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+    />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="198dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Aqui se encuentra tu informacion...."
+        android:textColor="@color/dark"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:text="Estudiante"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/pencils"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="271dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_nombre"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="nombre"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_edad"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="edad"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_nacimiento"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="fec_nacimiento"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_sexo"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="sexo"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_horas"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="horas"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:id="@+id/m_tel"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="telefono"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_mateF"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="materia fav"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/m_escuela"
+                android:layout_width="253dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:hint="escuela"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargebtSizeCheck" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:text="numero registrado"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/telefono_u"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/dark"
+                android:text="llamar"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

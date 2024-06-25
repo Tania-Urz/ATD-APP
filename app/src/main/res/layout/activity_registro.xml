@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro"
+    android:background="@color/dark"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="385dp"
+        android:layout_height="700dp"
+        android:background="@drawable/laptop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="233dp"
+        android:layout_height="136dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="Para poder iniciar sesion es necesaria cierta informacion..."
+        android:textColor="@color/dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="298dp"
+        android:layout_height="522dp"
+        android:background="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="279dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="248dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/white"
+            android:text="Nombre de Usuario:"
+            android:textColor="@color/dark"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="253dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/corners_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:hint="ingresa tu nombre"
+            android:shadowColor="@color/Gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text="edad:"
+            android:textColor="@color/dark"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edad"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/corners_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:hint="ingresa tu edad"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text="sexo"
+            android:textColor="@color/dark"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/sexo"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/corners_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:hint="sexo"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text="Telefono:"
+            android:textColor="@color/dark"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/corners_edittext"
+            android:fontFamily="sans-serif-thin"
+            android:hint="ingresa tu telefono"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="10dp"
+            android:text="Dia de nacimiento:"
+            android:textColor="@color/dark"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/FN"
+            android:layout_width="88dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="date"
+            android:background="@drawable/corners_edittext"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="FN"
+            android:textSize="8dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-40dp"
+            android:text="Materia a estudiar:"
+            android:textColor="@color/dark"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/materias"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/materia_elegida"
+            android:layout_width="150dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="40dp"
+            android:textSize="30dp"
+            android:textColor="@color/dark"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Escuela de Formacion"
+            android:textColor="@color/dark"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/MF"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-6dp"
+            android:background="@drawable/corners_edittext"
+            android:hint="escuela"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="Bien.... ahora, designar las horas destinadas al aprendizaje."
+            android:textColor="@color/dark"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:hint="1:00:00"
+            android:layout_marginLeft="86dp"
+            android:background="@drawable/hora_estilo"
+            android:inputType="time"
+            android:textColor="@color/dark"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/listo"
+        android:background="@drawable/listo"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:text="Listo"
+        android:onClick="Guardar"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        tools:ignore="TouchTargetSizeCheck" />
+    <FrameLayout
+        android:id="@+id/contenedor_fragmento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

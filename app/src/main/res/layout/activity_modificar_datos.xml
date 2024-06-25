@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".Modificar_datos">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Hacer cambios es parte del arte..."
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.029">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombre_m"
+                android:layout_width="253dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/corners_edittext"
+                android:fontFamily="sans-serif-thin"
+                android:hint="ingresa tu nombre"
+                android:shadowColor="@color/Gray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edad_m"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/corners_edittext"
+                android:fontFamily="sans-serif-thin"
+                android:hint="ingresa tu edad"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/sexo_m"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/corners_edittext"
+                android:fontFamily="sans-serif-thin"
+                android:hint="sexo"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/telefono_m"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/corners_edittext"
+                android:fontFamily="sans-serif-thin"
+                android:hint="ingresa tu telefono"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/FN_m"
+                android:layout_width="88dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/corners_edittext"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="FN"
+                android:inputType="date"
+                android:textSize="8dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/materias_m"
+                android:layout_width="61dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="40dp"
+                android:minHeight="48dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/materia_elegida_m"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-50dp"
+                android:textColor="@color/dark"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/MF_m"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_edittext"
+                android:hint="escuela"
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/time_m"
+                android:layout_width="110dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hora_estilo"
+                android:hint="1:00:00"
+                android:inputType="time"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/white"
+        android:text="Guardar Cambios"
+        android:onClick="Guardar"
+        android:textColor="@color/dark"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/anterior"
+        android:onClick="Atras"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:text="anterior"
+        android:textColor="@color/dark"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/guardar"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:onClick="Siguiente"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:text="siguiente"
+        android:textColor="@color/dark"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guardar"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

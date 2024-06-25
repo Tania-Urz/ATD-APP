@@ -1,0 +1,19 @@
+<resources>
+    <style name="Widget.Proyecto3P.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Proyecto3P.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+        <style name="AppTheme" parent="Theme.AppCompat.Light">
+            <item name="colorPrimary">#FFFFFF</item>
+            <item name="colorPrimaryDark">#FFFFFF</item>
+        </style>
+
+</resources>

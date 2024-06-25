@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/Gray"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/nombre_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nobre"
+                android:textColor="@color/dark"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/edad_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edad"
+                android:textColor="@color/dark"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
